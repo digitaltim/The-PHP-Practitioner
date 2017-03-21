@@ -1,13 +1,10 @@
 <?php
 
-$names = [
-	'age' => 31,
-	'name' => 'John',
-	'sister' => 'Mary'
+$task = [
+	'title' => 'Homework',
+	'due' => 'today',
+	'assigned_to' => 'Tim',
+	'completed' => false
 ]; 
-
-echo '<pre>';
-var_dump($names);
-echo '</pre>';
 
 require 'index.view.php';
