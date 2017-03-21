@@ -13,13 +13,8 @@
 </head>
 <body>
 	<ul>
-		<?php 
-			foreach ($names as $name) {
-				echo "<li>$name</li>";
-			}
-		?>
-		<?php foreach ($names as $name) : ?>
-			<li><?= $name; ?></li>
+		<?php foreach ($names as $key => $value) : ?>
+			<li><strong><?= $key ?></strong> <?= $value; ?></li>
 		<?php endforeach; ?>
 	</ul>
 </body>
