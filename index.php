@@ -1,13 +1,13 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 require 'functions.php';
 
-$query = require 'core/bootstrap.php';
+require 'core/bootstrap.php';
 
-$router = new Router;
+// `dd($app);
 
-require 'routes.php';
-
-$uri = trim($_SERVER['REQUEST_URI'], '/');
-
-require $router->direct($uri);
+require Router::load('routes.php')
+	->direct(Request::uri());
