@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Document</title>
-	<style type="text/css">
-		header {
-			background: #e3e3e3;
-			padding: 2em;
-			text-align: center;
-		}
-	</style>
-</head>
-<body>
-	<nav>
-		<ul>
-			<li><a href="/about">About Page</a></li>
-			<li><a href="/contact">Contact Page</a></li>
-		</ul>
-	</nav>
+<?php require 'views/partials/head.php'; ?>
 	<ul>
 		<?php foreach ($tasks as $task) : ?>
 			<li>
@@ -29,5 +10,4 @@
 			</li>
 		<?php endforeach; ?>
 	</ul>
-</body>
-</html>
+<?php require 'views/partials/footer.php'; ?>

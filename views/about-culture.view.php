@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Culture</title>
-</head>
-<body>
-	<h1>Our Culture at <?= $name; ?></h1>
-</body>
-</html>
+<?php require 'views/partials/head.php'; ?>
+	<h1>Our Culture att <?= $name; ?></h1>
+<?php require 'views/partials/footer.php'; ?>
