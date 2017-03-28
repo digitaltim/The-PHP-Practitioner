@@ -8,27 +8,26 @@ class PagesController
 	
 	public function home()
 	{
-		// die('home');
-		$users = App::get('database')->selectAll('users');
-
-		require 'views/index.view.php';
+		return view('index');
 	}
 
 	public function about()
 	{
-		require 'views/about.view.php';
+		$company = 'Laracasts';
+
+		return view('about', ['company' => $company]);
 	}
 
 	public function aboutCulture()
 	{
 		$name = 'Laracasts';
 
-		require 'views/about-culture.view.php';
+		return view('about-culture');
 	}
 
 
 	public function contact()
 	{
-		require 'views/contact.view.php';
+		return view('contact');
 	}
 }
